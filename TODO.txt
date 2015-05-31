@@ -15,20 +15,22 @@ Assassin(!)
 Necromancer(!)
 
 Pets:
-Wolf(?)
-Boar(?)
-Hawk(?)
+Wolf(!)
+Boar(!)
+Hawk(!)
+Imps(!)
+Undead(!)
 
 Balancing Issues:
 Class Abilities(!)
 Class Health/Energy(!)
 Item stats by level(!)
-Enemy pets(?)
+Enemy pets(!)
 
 Enemy AI:
 Which spells at which times(!)
 When to use items(!)
-Change strategy when pet dies(?)
+Change strategy when pet dies(!)
 
 Battle Handler:
 
