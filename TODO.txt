@@ -1,5 +1,7 @@
 Player Classes:
-
+Paladin(?)
+Mage(?)
+Warrior(!)
 
 
 Enemy Classes:
