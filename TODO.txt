@@ -5,7 +5,7 @@ Warrior(!)
 
 
 Enemy Classes:
-
+Bad
 
 
 Balancing Issues:
