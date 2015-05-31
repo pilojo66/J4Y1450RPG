@@ -11,7 +11,6 @@ Enemy Classes:
 Balancing Issues:
 
 
-asdfasdf
 Enemy AI:
 
 
@@ -20,4 +19,3 @@ Battle Handler:
 
 
 
-asdfa
