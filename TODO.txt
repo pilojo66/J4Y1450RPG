@@ -2,11 +2,11 @@ Player Classes:
 Paladin(?)
 Mage(?)
 Warrior(!)
-
+Deprived(?)
 
 Enemy Classes:
 Warlock(?)
-
+Necromancer(?)
 
 Balancing Issues:
 
