@@ -14,6 +14,11 @@ Fighter(!)
 Assassin(!)
 Necromancer(!)
 
+Pets:
+Wolf(?)
+Boar(?)
+Hawk(?)
+
 Balancing Issues:
 Class Abilities(!)
 Class Health/Energy(!)
