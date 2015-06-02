@@ -13,5 +13,156 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\Player">
+      <UniqueIdentifier>{ed7b1081-7d6f-41e8-bcfa-aa2c700c2c0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Enemy">
+      <UniqueIdentifier>{3b887477-b8f2-42cb-89d9-4606c670bc34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Pets">
+      <UniqueIdentifier>{76969505-4854-4139-bf6e-d15e19f95ceb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Enemy">
+      <UniqueIdentifier>{d4a19118-cce8-4a1e-90be-176830ac7617}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Player">
+      <UniqueIdentifier>{724b5f79-a59c-4e0a-af98-154a70e6e364}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Pets">
+      <UniqueIdentifier>{35c61e60-77bc-4f01-a325-620957c04743}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Enemy\Extentions">
+      <UniqueIdentifier>{d2e69e37-dcb8-47e4-b544-a7420678755b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Player\Extentions">
+      <UniqueIdentifier>{a52f76bf-6d7f-4b2c-8315-00942d96af40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Enemy\Extentions">
+      <UniqueIdentifier>{e4330009-fdbb-4b5f-8b96-0999115f20c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Player\Extentions">
+      <UniqueIdentifier>{98a1e33e-ef4b-4ec4-8cd8-fc9bb95c534b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Enemy\Enemy.cpp">
+      <Filter>Source Files\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Player\Player.cpp">
+      <Filter>Source Files\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Pets\Boar.cpp">
+      <Filter>Source Files\Pets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Pets\Hawk.cpp">
+      <Filter>Source Files\Pets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Pets\Imp.cpp">
+      <Filter>Source Files\Pets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Pets\Undead.cpp">
+      <Filter>Source Files\Pets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Pets\Wolf.cpp">
+      <Filter>Source Files\Pets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Enemy\Assassin.cpp">
+      <Filter>Source Files\Enemy\Extentions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Enemy\Barbarian.cpp">
+      <Filter>Source Files\Enemy\Extentions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Enemy\Fighter.cpp">
+      <Filter>Source Files\Enemy\Extentions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Enemy\Hunter.cpp">
+      <Filter>Source Files\Enemy\Extentions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Enemy\Necromancer.cpp">
+      <Filter>Source Files\Enemy\Extentions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Enemy\Warlock.cpp">
+      <Filter>Source Files\Enemy\Extentions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Player\Deprived.cpp">
+      <Filter>Source Files\Player\Extentions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Player\Mage.cpp">
+      <Filter>Source Files\Player\Extentions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Player\Paladin.cpp">
+      <Filter>Source Files\Player\Extentions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Player\Ranger.cpp">
+      <Filter>Source Files\Player\Extentions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Player\Rogue.cpp">
+      <Filter>Source Files\Player\Extentions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Player\Warrior.cpp">
+      <Filter>Source Files\Player\Extentions</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\Player.h">
+      <Filter>Header Files\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Enemy\Enemy.h">
+      <Filter>Header Files\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Pets\Boar.h">
+      <Filter>Header Files\Pets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Pets\Hawk.h">
+      <Filter>Header Files\Pets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Pets\Imp.h">
+      <Filter>Header Files\Pets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Pets\Undead.h">
+      <Filter>Header Files\Pets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Pets\Wolf.h">
+      <Filter>Header Files\Pets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Enemy\Assassin.h">
+      <Filter>Header Files\Enemy\Extentions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Enemy\Barbarian.h">
+      <Filter>Header Files\Enemy\Extentions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Enemy\Fighter.h">
+      <Filter>Header Files\Enemy\Extentions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Enemy\Hunter.h">
+      <Filter>Header Files\Enemy\Extentions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Enemy\Necromancer.h">
+      <Filter>Header Files\Enemy\Extentions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Enemy\Warlock.h">
+      <Filter>Header Files\Enemy\Extentions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Deprived.h">
+      <Filter>Header Files\Player\Extentions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Mage.h">
+      <Filter>Header Files\Player\Extentions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Paladin.h">
+      <Filter>Header Files\Player\Extentions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Ranger.h">
+      <Filter>Header Files\Player\Extentions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Rogue.h">
+      <Filter>Header Files\Player\Extentions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Warrior.h">
+      <Filter>Header Files\Player\Extentions</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -38,7 +38,9 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>..\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -64,6 +66,47 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\src\Enemy\Assassin.cpp" />
+    <ClCompile Include="..\src\Enemy\Barbarian.cpp" />
+    <ClCompile Include="..\src\Enemy\Enemy.cpp" />
+    <ClCompile Include="..\src\Enemy\Fighter.cpp" />
+    <ClCompile Include="..\src\Enemy\Hunter.cpp" />
+    <ClCompile Include="..\src\Enemy\Necromancer.cpp" />
+    <ClCompile Include="..\src\Enemy\Warlock.cpp" />
+    <ClCompile Include="..\src\main.cpp" />
+    <ClCompile Include="..\src\Pets\Boar.cpp" />
+    <ClCompile Include="..\src\Pets\Hawk.cpp" />
+    <ClCompile Include="..\src\Pets\Imp.cpp" />
+    <ClCompile Include="..\src\Pets\Undead.cpp" />
+    <ClCompile Include="..\src\Pets\Wolf.cpp" />
+    <ClCompile Include="..\src\Player\Deprived.cpp" />
+    <ClCompile Include="..\src\Player\Mage.cpp" />
+    <ClCompile Include="..\src\Player\Paladin.cpp" />
+    <ClCompile Include="..\src\Player\Player.cpp" />
+    <ClCompile Include="..\src\Player\Ranger.cpp" />
+    <ClCompile Include="..\src\Player\Rogue.cpp" />
+    <ClCompile Include="..\src\Player\Warrior.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\Deprived.h" />
+    <ClInclude Include="..\include\Enemy\Assassin.h" />
+    <ClInclude Include="..\include\Enemy\Barbarian.h" />
+    <ClInclude Include="..\include\Enemy\Enemy.h" />
+    <ClInclude Include="..\include\Enemy\Fighter.h" />
+    <ClInclude Include="..\include\Enemy\Hunter.h" />
+    <ClInclude Include="..\include\Enemy\Necromancer.h" />
+    <ClInclude Include="..\include\Enemy\Warlock.h" />
+    <ClInclude Include="..\include\Mage.h" />
+    <ClInclude Include="..\include\Paladin.h" />
+    <ClInclude Include="..\include\Pets\Boar.h" />
+    <ClInclude Include="..\include\Pets\Hawk.h" />
+    <ClInclude Include="..\include\Pets\Imp.h" />
+    <ClInclude Include="..\include\Pets\Undead.h" />
+    <ClInclude Include="..\include\Pets\Wolf.h" />
+    <ClInclude Include="..\include\Player.h" />
+    <ClInclude Include="..\include\Ranger.h" />
+    <ClInclude Include="..\include\Rogue.h" />
+    <ClInclude Include="..\include\Warrior.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
