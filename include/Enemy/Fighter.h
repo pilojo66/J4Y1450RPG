@@ -4,9 +4,12 @@
 
 class Fighter: public Enemy{
 	int energy;
+	bool dodging;
 
 public:
-
+	int Jab(void);
+	int Uppercut(void);
+	void Dodge(void);
 };
 
 #endif
