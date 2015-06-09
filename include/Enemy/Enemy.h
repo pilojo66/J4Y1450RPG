@@ -5,7 +5,7 @@
 
 
 class Enemy{
-	
+protected:
 	int health;
 	int strength;
 	int defense;
