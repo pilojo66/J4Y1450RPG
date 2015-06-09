@@ -7,7 +7,7 @@ class Necromancer: public Enemy{
 public:
 	void RaisePet(void);
 	int Curse(void);
-	
+	int Swarm(void);
 };
 
 

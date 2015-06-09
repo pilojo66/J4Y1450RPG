@@ -10,7 +10,7 @@ class Warlock: public Enemy{
 public:
 	int ShadowBolt(void);
 	void IntoShadows(void);
-
+	int Immolate(void);
 };
 
 #endif
