@@ -1,18 +1,70 @@
 Player Classes:
 Paladin(!)
+	Paladin Abilites:
+		Heal(?)
+		Consecrate(?)
+		Condemn(?)
+		Smite(?)
 Mage(!)
+	Mage Abilities:
+		Fire(?)
+		Ice(?)
+		Become Etheral(?)
+		
 Warrior(!)
+	Warrior Abilities:
+		Heavy Attack(?)
+		Quick Attack(?)
+		Parry(?)
+		
 Deprived(!)
+	Deprived Abilities:
+		Punch(?)
+		Kick(?)
+		Roll(?)
+		
 Ranger(!)
+	Ranger Abilities:
+		Net Shot(?)
+		
 Rogue(!)
+	Rogue Abilities:
+		Steal(?)
+		Multi Strike(?)
+		Incapacitate(?)
 
 Enemy Classes:
 Warlock(!)
+	Warlock Abilities:
+		Shadow Bolt(!)
+		Into Shadows(!)
+		Immolate(!)
 Barbarian(!)
+	Barbarian Abilities:
+		Shield Slam(!)
+		Charge(!)
+		Block(!)
+		Battle Cry(!)
 Hunter(!)
+	Hunter Abilities:
+		Poison Shot(!)
+		Power Shot(!)
+		Camouflage(!)
 Fighter(!)
+	Fighter Abilities:
+		Jab(!)
+		Uppercut(!)
+		Dodge(!)
 Assassin(!)
+	Assassin Abilities:
+		Poison(!)
+		Backstab(!)
+		Vanish(!)
 Necromancer(!)
+	Necromancer Abilities:
+		Raise Pet(!)
+		Curse(!)
+		Swarm(!)
 
 Pets:
 Wolf(!)
