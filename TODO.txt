@@ -1,7 +1,7 @@
 Player Classes:
 Paladin(!)
 	Paladin Abilites:
-		Heal(?)
+		Heal(!)
 		Consecrate(?)
 		Condemn(?)
 		Smite(?)
@@ -13,26 +13,23 @@ Mage(!)
 		
 Warrior(!)
 	Warrior Abilities:
-		Heavy Attack(?)
-		Quick Attack(?)
-		Parry(?)
-		
+		Slash(!) 	// Standard slash attack. //
+		Thrust(!) 	// Does less damage but critical hits do more than ususal. If performed after a stagger, is an automatic crit (parry). //
+		Stagger(!)	// Swings shield at enemy. Does very little damage but has a decent chance to stun for one turn. //
+		Gaurd(!) 	// Raises shield. The enemy's next attack will do significantly less damage. Has a slight chance to counter the attack. //
 Deprived(!)
 	Deprived Abilities:
-		Punch(?)
-		Kick(?)
-		Roll(?)
-		
+		Club(!)		// Slams the enemy with a club doing a large amount of damage. //
+		Kick(!)		// Kicks the enemy for some damage and a change to be stunned (knocked over). //
+		Roll(!)		// The enemy's next move is significantly less likely to hit. //
 Ranger(!)
 	Ranger Abilities:
-		Net Shot(?)
-		
 Rogue(!)
 	Rogue Abilities:
-		Steal(?)
-		Multi Strike(?)
-		Incapacitate(?)
-
+		Execute(!)	// Does massive damage on a critical hit but does nothing otherwise. If the enemy is below 20% health, kills them instantly and is guaranteed to hit. //
+		Multi Strike(!)	// Hits the enemy three times with a higher chance for a critical hit on the third. //
+		Lunge(!)	// Hits the enemy once, hard, and stuns them for one turn. If done twice in a row, will not stun the second time. //
+		Steady(!)	// Increases the chance of a crtitical hit for a few turns. //
 Enemy Classes:
 Warlock(!)
 	Warlock Abilities:
