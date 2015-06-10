@@ -1,6 +1,25 @@
 #include "Enemy/Assassin.h"
 
 Assassin::Assassin(){
+	int item;
+	int *invSize;
+	*invSize = rand() % 6 + 1;
+	inventory = new int[*invSize];
+	for(int i = 0; i < *invSize; i++){
+		item = rand() % 10 + 1;
+		if(item < 6){
+			inventory[i] = items::Potion;
+		}
+		else if(item > 6 && item < 8){
+			inventory[i] = items::ManaPot;
+		}
+		else if(item == 9){
+			inventory[i] = items::Antidote;
+		}
+		else{
+			inventory[i] = items::Aloe;
+		}
+	}
 	energy = 100;
 	vanished = false;
 	poisonedBlades = false;
@@ -29,8 +48,24 @@ void Assassin::TakeStun(int stun){
 	stuntimer = stun;
 }
 
-void Assassin::UseItem(void){
-	//TO BE FILLED IN LATER
+void Assassin::UseItem(void){ // NOT DONE
+	int choice = 0;
+	switch(inventory[choice]){
+		case items::Potion:
+			health += rand() % 30 + 1;
+			break;
+		case items::EnergyPot:
+			energy += rand()% 20 + 1;
+			break;
+		case items::Antidote:
+			poisontimer = 0;
+			break;
+		case items::Aloe:
+			burntimer = 0;
+			break;
+		default:
+			printf("Something went wrong!\n");
+	}
 }
 
 int Assassin::Attack(void){
