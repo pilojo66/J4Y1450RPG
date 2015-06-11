@@ -11,7 +11,7 @@ Assassin::Assassin(){
 			inventory[i] = items::Potion;
 		}
 		else if(item > 6 && item < 8){
-			inventory[i] = items::ManaPot;
+			inventory[i] = items::EnergyPot;
 		}
 		else if(item == 9){
 			inventory[i] = items::Antidote;
@@ -33,7 +33,7 @@ Assassin::Assassin(){
 
 void Assassin::TakeDamage(int damage){
 	if(burntimer > 0){
-		damage += rand() % 10 + 1;
+		damage += rand() % BURNDAMAGE + 1;
 	}
 	damage -= defense;
 	if(damage < 0) damage = 0;
@@ -56,9 +56,6 @@ void Assassin::UseItem(void){ // NOT DONE
 			break;
 		case items::EnergyPot:
 			energy += rand()% 20 + 1;
-			break;
-		case items::Antidote:
-			poisontimer = 0;
 			break;
 		case items::Aloe:
 			burntimer = 0;
