@@ -10,9 +10,9 @@ class Assassin: public Enemy{
 	bool vanished;
 	bool poisonedBlades;
 public:
+	enum items{Potion = 1, EnergyPot, Aloe};
 	Assassin();
 
-	
 	void TakeDamage(int);
 	void TakeBurn(int);
 	void TakeStun(int);

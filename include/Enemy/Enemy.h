@@ -3,17 +3,16 @@
 #include<string.h>
 #include<string>
 
+const int BURNDAMAGE = 12;
 
 class Enemy{
 protected:
-	enum items{Potion = 1, EnergyPot, Antidote, Aloe};
 	int *inventory;
 	int health;
 	int strength;
 	int defense;
 	int burntimer;
 	int stuntimer;
-	int poisontimer;
 	std::string Name;
 public:
 	virtual int Attack(void) = 0;
