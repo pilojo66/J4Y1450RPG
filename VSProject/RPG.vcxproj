@@ -103,7 +103,7 @@
     <ClInclude Include="..\include\Pets\Imp.h" />
     <ClInclude Include="..\include\Pets\Undead.h" />
     <ClInclude Include="..\include\Pets\Wolf.h" />
-    <ClInclude Include="..\include\Player.h" />
+    <ClInclude Include="..\include\Player\Player.h" />
     <ClInclude Include="..\include\Ranger.h" />
     <ClInclude Include="..\include\Rogue.h" />
     <ClInclude Include="..\include\Warrior.h" />
