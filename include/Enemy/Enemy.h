@@ -19,7 +19,7 @@ public:
 	virtual void TakeDamage(int) = 0;
 	virtual void TakeBurn(int) = 0;
 	virtual void TakeStun(int) = 0;
-	virtual void UseItem(void) = 0;
+	virtual bool UseItem(void) = 0;
 };
 
 #endif

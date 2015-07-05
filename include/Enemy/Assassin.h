@@ -16,7 +16,7 @@ public:
 	void TakeDamage(int);
 	void TakeBurn(int);
 	void TakeStun(int);
-	void UseItem(void);
+	bool UseItem(void);
 
 	//ABILITIES
 	int Attack(void);

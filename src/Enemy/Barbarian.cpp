@@ -19,6 +19,6 @@ void Barbarian::TakeStun(int stun){
 	stuntimer = stun;
 }
 
-void UseItem(void){
-
+bool UseItem(void){
+	return true;
 }

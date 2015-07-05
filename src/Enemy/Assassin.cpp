@@ -2,7 +2,7 @@
 
 Assassin::Assassin(){
 	int item;
-	int *invSize;
+	int *invSize = 0;
 	*invSize = rand() % 6 + 1;
 	inventory = new int[*invSize];
 	for(int i = 0; i < *invSize; i++){
@@ -33,6 +33,10 @@ void Assassin::TakeDamage(int damage){
 		damage += rand() % BURNDAMAGE + 1;
 	}
 	damage -= defense;
+	if (vanished){
+		damage = 0;
+		vanished = false;
+	}
 	if(damage < 0) damage = 0;
 	health -= damage;
 }
@@ -45,9 +49,127 @@ void Assassin::TakeStun(int stun){
 	stuntimer = stun;
 }
 
-void Assassin::UseItem(void){ // NOT DONE
+bool Assassin::UseItem(void){ 
 	int choice = 0;
-	switch(inventory[choice]){
+	if (health < 50){
+		choice = rand() % 100 + 1;
+		if (choice < 75){
+			for (int i = 0; i < sizeof(inventory) / sizeof(inventory[0]); i++){
+				if (inventory[i] == items::Potion){
+					choice = items::Potion;
+					inventory[i] = 0;
+					break;
+				}
+			}
+			if (choice == 0){
+				for (int i = 0; i < sizeof(inventory) / sizeof(inventory[0]); i++){
+					if (inventory[i] == items::EnergyPot){
+						choice = items::EnergyPot;
+						inventory[i] = 0;
+						break;
+					}
+				}
+			}
+			if (choice == 0){
+				printf("Could not use an item!\n");
+				return false;
+			}
+		}
+		else {
+			for (int i = 0; i < sizeof(inventory) / sizeof(inventory[0]); i++){
+				if (inventory[i] == items::EnergyPot){
+					choice = items::EnergyPot;
+					inventory[i] = 0;
+					break;
+				}
+			}
+			if (choice == 0){
+				for (int i = 0; i < sizeof(inventory) / sizeof(inventory[0]); i++){
+					if (inventory[i] == items::Potion){
+						choice = items::Potion;
+						inventory[i] = 0;
+						break;
+					}
+				}
+			}
+		}
+	}
+	else if (burntimer > 0){
+		choice = rand() % 100 + 1;
+		if (choice < 60){
+			for (int i = 0; i < sizeof(inventory) / sizeof(inventory[0]); i++){
+				if (inventory[i] == items::Aloe){
+					choice = items::Aloe;
+					inventory[i] = 0;
+					break;
+				}
+			}
+			if (choice == 0){
+				for (int i = 0; i < sizeof(inventory) / sizeof(inventory[0]); i++){
+					if (inventory[i] == items::Potion){
+						choice = items::Potion;
+						inventory[i] = 0;
+						break;
+					}
+					else if (inventory[i] == items::EnergyPot){
+						choice = items::EnergyPot;
+						inventory[i] = 0;
+						break;
+					}
+				}
+			}
+			if (choice == 0){
+				printf("Could not use an item!\n");
+				return false;
+			}
+			
+		}
+		else if (choice > 60 && choice < 90){
+			for (int i = 0; i < sizeof(inventory) / sizeof(inventory[0]); i++){
+				if (inventory[i] == items::Potion){
+					choice = items::Potion;
+					inventory[i] = 0;
+					break;
+				}
+			}
+			if (choice == 0){
+				for (int i = 0; i < sizeof(inventory) / sizeof(inventory[0]); i++){
+					if (inventory[i] == items::EnergyPot){
+						choice = items::EnergyPot;
+						inventory[i] = 0;
+						break;
+					}
+				}
+			}
+			if (choice == 0){
+				printf("Could not use an item!\n");
+				return false;
+			}
+		}
+		else {
+			for (int i = 0; i < sizeof(inventory) / sizeof(inventory[0]); i++){
+				if (inventory[i] == items::EnergyPot){
+					choice = items::EnergyPot;
+					inventory[i] = 0;
+					break;
+				}
+			}
+			if (choice == 0){
+				for (int i = 0; i < sizeof(inventory) / sizeof(inventory[0]); i++){
+					if (inventory[i] == items::Potion){
+						choice = items::Potion;
+						inventory[i] = 0;
+						break;
+					}
+				}
+			}
+			if (choice == 0){
+				printf("Could not use an item!\n");
+				return false;
+			}
+		}
+	}
+	switch(choice){
 		case items::Potion:
 			health += rand() % 30 + 1;
 			break;
@@ -60,10 +182,15 @@ void Assassin::UseItem(void){ // NOT DONE
 		default:
 			printf("Something went wrong!\n");
 	}
+	return true;
 }
 
 int Assassin::Attack(void){
 	int damage = 0;
+	if (poisonedBlades) {
+		damage += rand() % 10;
+		poisonedBlades = false;
+	}
 	damage = rand() % 20 + strength;
 	return damage;
 }
