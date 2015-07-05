@@ -88,7 +88,6 @@
     <ClCompile Include="..\src\Player\Warrior.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\include\Deprived.h" />
     <ClInclude Include="..\include\Enemy\Assassin.h" />
     <ClInclude Include="..\include\Enemy\Barbarian.h" />
     <ClInclude Include="..\include\Enemy\Enemy.h" />
@@ -96,17 +95,18 @@
     <ClInclude Include="..\include\Enemy\Hunter.h" />
     <ClInclude Include="..\include\Enemy\Necromancer.h" />
     <ClInclude Include="..\include\Enemy\Warlock.h" />
-    <ClInclude Include="..\include\Mage.h" />
-    <ClInclude Include="..\include\Paladin.h" />
     <ClInclude Include="..\include\Pets\Boar.h" />
     <ClInclude Include="..\include\Pets\Hawk.h" />
     <ClInclude Include="..\include\Pets\Imp.h" />
     <ClInclude Include="..\include\Pets\Undead.h" />
     <ClInclude Include="..\include\Pets\Wolf.h" />
+    <ClInclude Include="..\include\Player\Deprived.h" />
+    <ClInclude Include="..\include\Player\Mage.h" />
+    <ClInclude Include="..\include\Player\Paladin.h" />
     <ClInclude Include="..\include\Player\Player.h" />
-    <ClInclude Include="..\include\Ranger.h" />
-    <ClInclude Include="..\include\Rogue.h" />
-    <ClInclude Include="..\include\Warrior.h" />
+    <ClInclude Include="..\include\Player\Ranger.h" />
+    <ClInclude Include="..\include\Player\Rogue.h" />
+    <ClInclude Include="..\include\Player\Warrior.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

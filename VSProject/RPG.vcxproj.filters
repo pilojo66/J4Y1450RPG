@@ -41,7 +41,7 @@
       <UniqueIdentifier>{d2e69e37-dcb8-47e4-b544-a7420678755b}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\Player\Extensions">
-      <UniqueIdentifier>{a52f76bf-6d7f-4b2c-8315-00942d96af40}</UniqueIdentifier>
+      <UniqueIdentifier>{de746093-6e31-4c36-b1d9-040bb6296cea}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -143,26 +143,26 @@
     <ClInclude Include="..\include\Enemy\Warlock.h">
       <Filter>Header Files\Enemy\Extensions</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\Deprived.h">
-      <Filter>Header Files\Player\Extensions</Filter>
-    </ClInclude>
-    <ClInclude Include="..\include\Mage.h">
-      <Filter>Header Files\Player\Extensions</Filter>
-    </ClInclude>
-    <ClInclude Include="..\include\Paladin.h">
-      <Filter>Header Files\Player\Extensions</Filter>
-    </ClInclude>
-    <ClInclude Include="..\include\Ranger.h">
-      <Filter>Header Files\Player\Extensions</Filter>
-    </ClInclude>
-    <ClInclude Include="..\include\Rogue.h">
-      <Filter>Header Files\Player\Extensions</Filter>
-    </ClInclude>
-    <ClInclude Include="..\include\Warrior.h">
-      <Filter>Header Files\Player\Extensions</Filter>
-    </ClInclude>
     <ClInclude Include="..\include\Player\Player.h">
       <Filter>Header Files\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Player\Deprived.h">
+      <Filter>Header Files\Player\Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Player\Mage.h">
+      <Filter>Header Files\Player\Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Player\Paladin.h">
+      <Filter>Header Files\Player\Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Player\Ranger.h">
+      <Filter>Header Files\Player\Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Player\Rogue.h">
+      <Filter>Header Files\Player\Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Player\Warrior.h">
+      <Filter>Header Files\Player\Extensions</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
