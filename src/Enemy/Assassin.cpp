@@ -13,9 +13,6 @@ Assassin::Assassin(){
 		else if(item > 6 && item < 8){
 			inventory[i] = items::EnergyPot;
 		}
-		else if(item == 9){
-			inventory[i] = items::Antidote;
-		}
 		else{
 			inventory[i] = items::Aloe;
 		}
