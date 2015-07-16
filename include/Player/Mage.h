@@ -19,6 +19,7 @@ public:
 	int Attack(void);
 	int Fireball(void);
 	int IceShield(void);
+	int ManaBurst(void);
 	int Conversion(void);
 };
 #endif
