@@ -6,7 +6,7 @@
 #include <math.h>
 
 class Warrior: public Player{
-	
+	bool gaurd;
 public:
 	Warrior();
 
@@ -16,10 +16,9 @@ public:
 	bool UseItem(void);
 
 	//ABILITIES
-	int Attack(void);
 	int Slash(void);
 	int Thrust(bool);
 	int Stagger(void);
-	int Gaurd(void);
+	void Gaurd(void);
 };
 #endif

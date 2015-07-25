@@ -1,13 +1,20 @@
 #include "Player/Warrior.h"
 
-Warrior::Warrior(){}
+Warrior::Warrior(){
+	burntimer = 0;
+	stuntimer = 0;
+	gaurd = false;
+}
 
 void Warrior::TakeDamage(int damage){
 if(burntimer > 0){
 		damage += rand() % BURNDAMAGE + 1;
 	}
 	damage -= defense;
-	if(damage < 0) damage = 0;
+	if(gaurd){
+		damage -= 25;
+	}
+	if(damage < 0){damage = 0;}
 	health -= damage;
 }
 
@@ -42,4 +49,8 @@ int Warrior::Stagger(){
 	if(rand() % 2 + 1 == 1){
 		
 	}
+}
+
+void Warrior::Gaurd(){
+	gaurd = true;
 }
