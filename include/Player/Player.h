@@ -3,7 +3,7 @@
 #include<string.h>
 #include<string>
 
-const int BURNDAMAGE = 12;
+const int BURNDAMAGE = rand() % 8 + 4;
 
 class Player{
 protected:

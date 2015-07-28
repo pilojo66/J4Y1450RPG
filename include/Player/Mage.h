@@ -6,6 +6,7 @@
 #include <math.h>
 
 class Mage: public Player{
+	int mana;
 	bool iceshield;
 	int ice;
 public:

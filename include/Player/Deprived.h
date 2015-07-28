@@ -6,7 +6,8 @@
 #include <math.h>
 
 class Deprived: public Player{
-	
+	bool evade;
+	bool partial;
 public:
 	Deprived();
 
@@ -16,7 +17,6 @@ public:
 	bool UseItem(void);
 
 	//ABILITIES
-	int Attack(void);
 	int Club(void);
 	int Kick(void);
 	int Roll(void);
