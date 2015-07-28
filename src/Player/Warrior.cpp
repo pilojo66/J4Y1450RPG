@@ -13,6 +13,7 @@ if(burntimer > 0){
 	damage -= defense;
 	if(gaurd){
 		damage -= 25;
+		gaurd = false;
 	}
 	if(damage < 0){damage = 0;}
 	health -= damage;
@@ -47,7 +48,7 @@ int Warrior::Stagger(){
 	int damage = 0;
 	damage = rand() % 15 + 5;
 	if(rand() % 2 + 1 == 1){
-		
+		//Stun
 	}
 }
 

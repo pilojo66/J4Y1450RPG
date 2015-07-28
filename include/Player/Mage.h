@@ -6,7 +6,8 @@
 #include <math.h>
 
 class Mage: public Player{
-	
+	bool iceshield;
+	int ice;
 public:
 	Mage();
 
@@ -16,7 +17,6 @@ public:
 	bool UseItem(void);
 
 	//ABILITIES
-	int Attack(void);
 	int Fireball(void);
 	int IceShield(void);
 	int ManaBurst(void);
