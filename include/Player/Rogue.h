@@ -6,7 +6,8 @@
 #include <math.h>
 
 class Rogue: public Player{
-	
+	bool steady;
+	int focus;
 public:
 	Rogue();
 
@@ -16,7 +17,6 @@ public:
 	bool UseItem(void);
 
 	//ABILITIES
-	int Attack(void);
 	int Lunge(void);
 	int MultiStrike(void);
 	int Steady(void);
