@@ -6,7 +6,7 @@
 #include <math.h>
 
 class Ranger: public Player{
-	
+	bool smoke;
 public:
 	Ranger();
 
@@ -16,10 +16,9 @@ public:
 	bool UseItem(void);
 
 	//ABILITIES
-	int Attack(void);
 	int ArrowShot(void);
 	int Smoke(void);
 	int Flare(void);
-	int Trap(int);
+	int Trap(void);
 };
 #endif
