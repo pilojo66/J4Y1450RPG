@@ -7,6 +7,7 @@
 
 class Ranger: public Player{
 	bool smoke;
+	int mana;
 public:
 	Ranger();
 

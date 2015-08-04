@@ -1,6 +1,7 @@
 #include "Player/Ranger.h"
 
 Ranger::Ranger(){
+	mana = 80;
 	health = 150;
 	strength = 17;
 	defense = 5;
@@ -48,8 +49,9 @@ int Ranger::Flare(){
 
 int Ranger::Smoke(){
 	smoke = true;
+	mana -= 15;
 }
 
 int Ranger::Trap(){
-	
+	mana -= 30;
 }

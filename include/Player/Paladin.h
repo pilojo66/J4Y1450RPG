@@ -6,7 +6,8 @@
 #include <math.h>
 
 class Paladin: public Player{
-	
+	int mana;
+	bool healthBack;
 public:
 	Paladin();
 
@@ -16,10 +17,9 @@ public:
 	bool UseItem(void);
 
 	//ABILITIES
-	int Attack(void);
 	int Heal(void);
-	int Consecrate(bool);
+	int Consecrate(void);
 	int Smite(void);
-	int Condemn(int);
+	int Condemn(void);
 };
 #endif
